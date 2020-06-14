@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onLongClick(View view) {
                 Intent intent = new Intent( MainActivity.this, Main2Activity.class );
-                startActivity( intent );
+                startActivity( intent    );
                 return false;
             }
         } );

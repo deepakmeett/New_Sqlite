@@ -45,10 +45,8 @@ public class Database extends SQLiteOpenHelper {
         String[] columns = {ID};
         String selction = NAME + "=?" + " AND " + EMAIL + "=?" + " AND " + AGE + "=?";
         String[] selectionArgs = {Name, Email, Age};
-        
         Cursor cursor = sqLiteDatabase.query( TABLE, columns, selction, selectionArgs,
                                               null, null, null);
-        
         int cur = cursor.getCount();
         cursor.close();
         sqLiteDatabase.close();
